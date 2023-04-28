@@ -1,0 +1,769 @@
+/* Universal tags */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    cursor: default;
+    background: #484848;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+img {
+    border: 0px;
+    vertical-align: middle;
+}   
+
+strong {
+    font-weight: bold;
+}
+
+select {
+    border-radius: 0;
+    appearance: none;
+}
+
+aside {
+    flex-basis: 332px;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    background-color: #212121;
+    height: 50px;
+    align-items: center;
+    padding: 5px;
+}
+
+.navbar__logo {
+    font-weight: bold;
+    width: 100px;
+    height: 100%;
+    padding: 11px;
+    text-align: center;
+}
+
+.navbar__menu {
+    display: flex;
+    margin-left: 92px;
+    width: 100%;
+}
+
+.navbar__menu_1 {
+    display: flex;
+    width: 80%; 
+    margin: 0px; 
+    align-items: center;
+}
+
+.navbar__menu__item {
+    padding: 8px 12px;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.id_name {
+    display: flex;
+    padding: 10px;
+}
+
+.id_name_button {
+    color: white;
+    background: #484848;
+    padding: 6.5px;
+    width: 50px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid;
+    border-color: #484848;
+}
+
+.id_name_searchicon {
+    background: #a4a4a4;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid;
+    border-color: #a4a4a4;
+}
+
+.id_name input {
+    height: 30px;
+    background: #484848;
+    border: 1px solid;
+    border-color: #484848;
+}
+
+/* inner top */
+
+.header-box {
+    display: flex;
+}
+
+.inner {
+    position: relative;
+    display: flex;
+    margin: 0px auto;
+    align-items: center;
+    background-color: #212121;
+    padding: 20px;
+    padding-bottom: 8px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.inner-box {
+    padding-right: 420px;
+}
+
+.champion-main {
+    margin: 0px 0px 20px;
+    display: flex;
+}
+
+.img-box {
+    position: relative;
+    display: flex;
+    width: 90px;
+    height: 90px;
+    margin-right: 24px;
+}
+
+.info-box h1 {
+    font-weight: normal;
+    font-size: 0px;
+}
+
+.info-box h1 strong {
+    font-size: 21px;
+    color: white;
+    line-height: 32px;
+}
+
+.info-box h1 span {
+    font-size: 15px;
+    margin-left: 6px;
+    color: #9e9eb1;
+    letter-spacing: -0.9px;
+}
+
+.tier-info {
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.tier-color {
+    color: #9e9eb1;
+    font-size: 12px;
+}
+
+.info-bottom-container {
+    margin-top: 8px;
+}
+
+.skill-box {
+    display: flex;
+}
+
+.skill {
+    width: 32px;
+    margin-left: 4px;
+}
+
+.skill img {
+    width: 100%;
+}
+
+.inner-bottom {
+    margin-bottom: 16px;
+}
+
+.champion-statistics {
+    display: flex;
+}
+
+.champion-statistics1 {
+    width: 94px;
+    padding: 0px 8px 0px 12px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #484848;
+}
+
+.statistics2 {
+    color: white;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.statistics3 {
+    color: #9e9eb1;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.inner-main {
+    margin-bottom: 110px;
+}
+
+.inner-top {
+    display: inline-block;
+}
+
+.inner-top1 {
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #646464;
+    background: #646464;
+    color: white;
+    padding: 0 32px 0 12px;
+    height: 40px;
+}
+
+.inner-top1 span {
+    font-size: 14px;
+    color: white;
+}
+
+.inner-top2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.inner-top3 {
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #646464;
+    background: #646464;
+    color: white;
+    padding: 0 32px 0 12px;
+    height: 40px;
+}
+
+.inner-top3 span {
+    font-size: 14px;
+    color: white;
+}
+
+.inner-top4 {
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #646464;
+    background: #646464;
+    color: white;
+    padding: 0 32px 0 16px;
+}
+
+.inner-top4 span {
+    font-size: 14px;
+    color: white;
+}
+
+.information {
+    margin-top: 8px;
+}
+
+.information2 {
+    display: flex;
+    margin-left: 213px;
+}
+
+.information2 main {
+    flex-grow: 1;
+    max-width: 740px;
+}
+
+.rune {
+    background-color: #212121;
+    border-radius: 5px;
+}
+
+.rune_name {
+    position: relative;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #484848;
+}
+
+.rune_main2 {
+    display: flex;
+    padding: 12px;
+}
+
+.rune_main3 {
+    padding: 0px 12px;
+}
+
+.rune_main4 {
+    display: flex;
+    align-items: flex-end;
+}
+
+.rune_main5 {
+    position: relative;
+    width: 136px;
+    padding-bottom: 28px;
+}
+
+.rune_main_name {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    line-height: 16px;
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+}
+
+.rune_main_skill {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.item_item_mark {
+    width: 100%;
+}
+
+.item_item_mark img {
+    display: block;
+    border-radius: 50%;
+    background-color: #1c1c1f;
+    margin: 0px auto;
+}
+
+.item {
+    padding: 4px 0px;
+}
+
+.item11 {
+    width: 28px;
+    border-radius: 50%;
+    background-color: #31313c;
+}
+
+.item11 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.item14 {
+    width: 28px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+
+.item22 {
+    width: 28px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.rune_main_line {
+    width: 1px;
+    height: 176px;
+    background-color: gray;
+    margin: 0px 10px;
+    align-self: flex-start;
+}
+
+.rune_sub {
+    position: relative;
+    width: 136px;
+    padding-bottom: 28px;
+}
+
+.rune_sub_name {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    line-height: 16px;
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+}
+
+.rune_stat {
+    position: relative;
+    padding-bottom: 28px;
+}
+
+.rune_stat_name {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    line-height: 16px;
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+}
+
+.rune_stat_skill {
+    display: flex;
+    width: 96px;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.item311 {
+    border-radius: 50%;
+    background-color: rgb(40, 40, 48);
+    opacity: 0.5;
+}
+
+.item312 {
+    border-radius: 50%;
+    background-color: rgb(34, 34, 34);
+    border: 1px solid rgb(187, 152, 52);
+}
+
+.rune_indicator {
+    flex: 1 1 0%;
+}
+
+.rune_most1_indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 11px 8px 8px;
+    background-color: rgb(81, 81, 99);
+    border-color: rgb(81, 81, 99);
+}
+
+.rune_most1_indicator div {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.rune_most1_indicator_img {
+    justify-content: center;
+    margin-top: 0px !important;
+}
+
+.rune_most1_indicator_img img {
+    border-radius: 50%;
+}
+
+.rune_most1_indicator_img :nth-child(2) {
+    margin-left: 4px;
+    background: black;
+}
+
+.rune_most1_indicator_img :nth-child(3) {
+    margin-left: 12px;
+}
+
+.rune_most1_indicator div span {
+    flex-basis: 50%;
+    margin-left: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    line-height: 16px;
+    font-size: 12px;
+}
+
+.rune_most1_indicator div span small {
+    display: block;
+    color: gray;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.rune_most1_indicator div span em {
+    font-style: normal;
+    color: white;
+}
+
+.line-18694lf {
+    margin-top: 0px !important;
+}
+
+.rune_most2_indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 8px;
+    border-color: rgb(66, 66, 84);
+    padding: 11px 8px 8px;
+}
+
+.rune_most2_indicator div {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.rune_most2_indicator_img {
+    justify-content: center;
+    margin-top: 0px !important;
+}
+
+.rune_most2_indicator_img img {
+    border-radius: 50%;
+}
+
+.rune_most2_indicator_img :nth-child(2) {
+    margin-left: 4px;
+    background: black;
+}
+
+.rune_most2_indicator_img :nth-child(3) {
+    margin-left: 12px;
+}
+
+.rune_most2_indicator div span {
+    flex-basis: 50%;
+    margin-left: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    line-height: 16px;
+    font-size: 12px;
+}
+
+.rune_most2_indicator div span:first-of-type {
+    margin-left: 0px;
+}
+
+.rune_most2_indicator div span small {
+    display: block;
+    color: gray;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.win-rate em {
+    font-style: normal;
+    color: white;
+}
+
+/* skill build */
+
+.skill-build {
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-color: #212121;
+}
+
+.skill-build-name {
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    border-bottom-style: solid;
+    color: white;
+    border-bottom-color: #31313c;
+}
+
+.skill-build-name a {
+    color: white;
+    font-weight: bold;
+    display: inline-flex;
+}
+
+.arrow-icon {
+    width: 16px;
+    margin-left: 5px;
+    margin-top: 1px;
+    background-image: url(imgs/free-icon-arrow-right-6423875.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.skill-build-main2 {
+    padding: 12px 0 12px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-build-main3 {
+    padding: 0 4px;
+}
+
+.skill-build-icon2 {
+    display: flex;
+    align-items: center;
+}
+
+.skill-build-icon2 div {
+    height: 32px;
+}
+
+.skill_mol {
+    display: inline-block;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.skill-q3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background: rgba(32, 45, 55, 0.9);
+    color: #0093FF!important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px!important;
+    border-radius: 4px;
+}
+
+.skill-e3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background: rgba(32, 45, 55, 0.9);
+    color: #FF8200!important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px!important;
+    border-radius: 4px;
+}
+
+.skill-w3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background: rgba(32, 45, 55, 0.9);
+    color: #00D7B0!important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px!important;
+    border-radius: 4px;
+}
+
+.skill-order {
+    margin-top: 8px;
+}
+
+.skill-order1 {
+    margin-right: 2px;
+}
+
+.skill-order-q {
+    width: 24px;
+    height: 24px;
+    background: #484848;
+    color: #0093FF!important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px!important;
+    border-radius: 4px;
+}
+
+.skill-order-w {
+    width: 24px;
+    height: 24px;
+    background: #484848;
+    color: #00D7B0!important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px!important;
+    border-radius: 4px;
+
+}
+
+.skill-order-e {
+    width: 24px;
+    height: 24px;
+    background: #484848;
+    color: #FF8200!important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px!important;
+    border-radius: 4px;
+}
+
+.skill-order-r {
+    width: 24px;
+    height: 24px;
+    background: #484848;
+    color: red;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px!important;
+    border-radius: 4px;
+}
+
+.skill-build-rate {
+    display: flex;
+    align-items: center;
+}
+
+.skill-build-pick_rate {
+    width: 120px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.skill-build-pick_rate strong {
+    color: white;
+}
+
+.skill-build-pick_rate small {
+    font-size: 12px;
+    color: #9e9eb1;
+}
+
+.skill-build-win_rate {
+    width: 120px;
+    padding-left: 4px;
+    padding-right: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.side1 {
+    border-radius: 5px;
+    margin-top: 15px;
+    width: 329px;
+    height: 290px;
+    background-color: #212121;
+    margin-left: 15px;
+}
+
+.side2 {
+    border-radius: 5px;
+    margin-top: 15px;
+    width: 329px;
+    height: 140px;
+    background-color: #212121;
+    margin-left: 15px;
+}

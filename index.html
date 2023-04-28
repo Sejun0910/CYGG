@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYGG</title>
+    <meta name="description" content="CYGG Practice">
+    <meta name="author" content="Sejun">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" type="image/png" href="imgs/teemo.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <a href="#">CYGG</a>
+        </div>
+        <div class="navbar__menu">
+            <ul class="navbar__menu_1">
+                <li class="navbar__menu__item">
+                    <a href="">홈</a>
+                </li>
+                <li class="navbar__menu__item">
+                    <a href="">관전하기</a>
+                </li>
+                <li class="navbar__menu__item">
+                    <a href="">챔피언분석</a>
+                </li>
+                <li class="navbar__menu__item">
+                    <a href="">랭킹</a>
+                </li>
+                <li class="navbar__menu__item">
+                    <a href="">프로관전</a>
+                </li>
+                <li class="navbar__menu__item">
+                    <a href="">멀티서치</a>
+                </li>
+                <li class="navbar__menu__item">
+                    <a href="">커뮤니티</a>
+                </li>
+            </ul>
+            <div>
+                <form class="id_name">
+                    <div class="id_name3">
+                        <select name="server" id="server" class="id_name_button">
+                            <option value="kr">KR</option>
+                            <option value="global">Global</option>
+                            <option value="na">NA</option>
+                            <option value="euw">EUW</option>
+                            <option value="eune">EUNE</option>
+                            <option value="oce">OCE</option>
+                            <option value="jp">JP</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" id="search" name="search" autocomplete="off" placeholder="소환사명, 소환사명, ..." vaule>
+                    </div>
+                    <button type="submit" class="id_name_searchicon"><img src="imgs/free-icon-search-6328608.png" width="24" height="24"></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Champion -->
+    <div>
+        <div class="header-box">
+            <div class="inner">
+                <div>
+                    <div class="inner-box">
+                        <div class="champion-main">
+                            <div class="img-box">
+                                <img src="/imgs/Samira.jpeg" alt="사미라">
+                            </div>
+                            <div class="info-box">
+                                <h1>
+                                    <strong>사미라</strong>
+                                    <span>빌드 - 바텀</span>
+                                </h1>
+                                <div class="tier-info">
+                                    <span class="tier-color">OP 티어</span>
+                                </div>
+                                <div class="info-bottom-container">
+                                    <div class="skill-box">
+                                        <div class="skill">
+                                            <div class style="position: relative;">
+                                                <img src="/imgs/skill/P.jpeg" alt="무모한 충동">
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class style="position: relative;">
+                                                <img src="/imgs/skill/Q.jpeg" alt="천부적 재능">
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class style="position: relative;">
+                                                <img src="/imgs/skill/W.jpeg" alt="원형 검무">
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class style="position: relative;">
+                                                <img src="/imgs/skill/E.jpeg" alt="거침없는 질주">
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class style="position: relative;">
+                                                <img src="/imgs/skill/R.jpeg" alt="지옥불 난사">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-bottom">
+                        <div class="champion-statistics">
+                            <div class="champion-statistics1">
+                                <div class="statistics2">승률</div>
+                                <div class="statistics3">
+                                    52.76
+                                    %
+                                </div>
+                            </div>
+                            <div class="champion-statistics1">
+                                <div class="statistics2">픽률</div>
+                                <div class="statistics3">
+                                    15.38
+                                    %
+                                </div>
+                            </div>
+                            <div class="champion-statistics1">
+                                <div class="statistics2">밴률</div>
+                                <div class="statistics3">
+                                    54.92
+                                    %
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="inner-main">
+                    <div class="inner-top">
+                        <div>
+                            <select name="server" id="server" class="inner-top1">
+                                <option value="kr">KR</option>
+                                <option value="global">Global</option>
+                                <option value="na">NA</option>
+                                <option value="euw">EUW</option>
+                                <option value="eune">EUNE</option>
+                                <option value="oce">OCE</option>
+                                <option value="jp">JP</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inner-top2">
+                        <div>
+                            <select name="tier" id="tier" class="inner-top3">
+                                <option value="platinum">Platinum</option>
+                                <option value="all">All</option>
+                                <option value="challenger">Challenger</option>
+                                <option value="grandmaster">Grandmaster</option>
+                                <option value="master">Master</option>
+                                <option value="diamond">Diamond</option>
+                                <option value="platinum">Platinum</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inner-top2">
+                        <div>
+                            <select name="version" id="version" class="inner-top4">
+                                <option value="version1">v13.03</option>
+                                <option value="version2">v13.01B</option>
+                                <option value="version3">v12.23</option>
+                            </select>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- information -->
+    <div class="information">
+        <div class="information2">
+            <main>
+                <div class="rune">
+                    <h3 class="rune_name">
+                        <a href="">
+                            추천 룬 세팅
+                        </a>
+                    </h3>
+                    <div class="rune_main">
+                        <div class="rune_main2">
+                            <div class="rune_main3">
+                                <div class="rune_main4">
+                                    <div class="rune_main5">
+                                        <span class="rune_main_name">정밀</span>
+                                        <div class="rune_main_skill">
+                                            <div class="item_item_mark">
+                                                <div class style="position: relative;룬">
+                                                    <img src="imgs/rune img/정밀 룬.webp" width="28" alt="정밀" height="28">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rune_main_skill">
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/집공 룬.webp" width="28" alt="집중 공격" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/치속 룬.webp" width="28" alt="치명적 속도" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/기발 룬.webp" width="28" alt="기민한 발놀림" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item14">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/정복자 룬.webp" width="28" alt="정복자" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rune_main_skill">
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/과다치유.webp" width="28" alt="과다치유" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item22">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/승전보.webp" width="28" alt="승전보" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/침착.webp" width="28" alt="침착" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rune_main_skill">
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/전설 민첩.webp" width="28" alt="전설: 민첩함" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/전설 강인.webp" width="28" alt="전설: 강인함" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item22">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/전설 핏빛.webp" width="28" alt="전설: 핏빛길" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rune_main_skill">
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div clas style="position: relative;">
+                                                        <img src="imgs/rune img/최후의 일격.webp" width="28" alt="최후의 일격" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/체력차 극복.webp" width="28" alt="체력차 극복" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item22">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/최후의 저항.webp" width="28" alt="최후의 저항" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rune_main_line"></div>
+                                    <div class="rune_sub">
+                                        <span class="rune_sub_name">지배</span>
+                                        <div class="rune_main_skill">
+                                            <div class="item_item_mark">
+                                                <div class style="position: relative;">
+                                                    <img src="imgs/rune img/지배 룬.webp" width="28" alt="지배" height="28">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rune_main_skill">
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/비열한 한방.webp" width="28" alt="비열한 한방" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item22">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/피의 맛.webp" width="28" alt="피의 맛" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/돌발 일격.webp" width="28" alt="돌발 일격" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rune_main_skill">
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/좀비 와드.webp" width="28" alt="좀비와드" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/유령 포로.webp" width="28" alt="유령 포로" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/사냥의 증표.webp" width="28" alt="사냥의 증표" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rune_main_skill">
+                                            <div class="item">
+                                                <div class="item22">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/보물 사냥꾼.webp" width="28" alt="보물 사냥꾼" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/영리한 사냥꾼.webp" width="28" alt="영리한 사냥꾼" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/끈질긴 사냥꾼.webp" width="28" alt="끈질긴 사냥꾼" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item11">
+                                                    <div class style="position: relative;">
+                                                        <img src="imgs/rune img/궁극의 사냥꾼.webp" width="28" alt="궁극의 사냥꾼" height="28">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rune_main_line"></div>
+                                    <div class="rune_stat">
+                                        <span class="rune_stat_name">능력치 파편</span>
+                                        <div class="rune_stat_skill">
+                                            <div class style="position: relative;">
+                                                <img src="imgs/rune img/적응형 능력치.webp" width="24" alt="OFFENSE" height="24" class="item311">
+                                            </div>
+                                            <div class style="position: relative;">
+                                                <img src="imgs/rune img/공격속도.webp" width="24" alt="OFFENSE" height="24" class="item312">
+                                            </div>
+                                            <div class style="position: relative;">
+                                                <img src="imgs/rune img/스킬 가속.webp" width="24" alt="OFFENSE" height="24" class="item311">
+                                            </div>
+                                        </div>
+                                        <div class="rune_stat_skill">
+                                            <div class style="position: relative;">
+                                                <img src="imgs/rune img/적응형 능력치(색).webp" width="24" alt="OFFENSE" height="24" class="item312">
+                                            </div>
+                                            <div class style="position: relative;">
+                                                <img src="imgs/rune img/방어력.webp" width="24" alt="OFFENSE" height="24" class="item311">
+                                            </div>
+                                            <div class style="position: relative;">
+                                                <img src="imgs/rune img/마법저항력.webp" width="24" alt="OFFENSE" height="24" class="item311">
+                                            </div>
+                                        </div>
+                                        <div class="rune_stat_skill">
+                                            <div class style="position: relative;">
+                                                <img src="imgs/rune img/체력.webp" width="24" alt="OFFENSE" height="24" class="item311">
+                                            </div>
+                                            <div class style="position: relative;">
+                                                <img src="imgs/rune img/방어력 (색).webp" width="24" alt="OFFENSE" height="24" class="item312">
+                                            </div>
+                                            <div class style="position: relative;">
+                                                <img src="imgs/rune img/마법저항력.webp" width="24" alt="OFFENSE" height="24" class="item311">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="rune_indicator">
+                                <li class="rune_most1_indicator">
+                                    <div class="rune_most1_indicator_img">
+                                        <img src="imgs/rune img/정밀 룬.webp" width="24" alt="정밀" height="24">
+                                        <img src="imgs/rune img/정복자 룬.webp" width="24" alt=정복자" height="24">
+                                        <img src="imgs/rune img/지배 룬.webp" width="24" alt="지배" height="24">
+                                    </div>
+                                    <div class="rune_most1_indicator1">
+                                        <span class="pick-rate">
+                                            96.25
+                                            %
+                                            <small>
+                                                4,439
+                                                게임
+                                            </small>
+                                        </span>
+                                        <span class="win-rate">
+                                            <em>
+                                                52.56
+                                                %
+                                            </em>
+                                        </span>
+                                    </div>
+                                    <div class="line-18694lf"></div>
+                                </li>
+                                <li class="rune_most2_indicator">
+                                    <div class="rune_most2_indicator_img">
+                                        <img src="imgs/rune img/정밀 룬.webp" width="24" alt="정밀" height="24">
+                                        <img src="imgs/rune img/정복자 룬.webp" width="24" alt=정복자" height="24">
+                                        <img src="imgs/rune img/결의 룬.webp" width="24" alt="결의" height="24">
+                                    </div>
+                                    <div class="rune_most2_indicator1">
+                                        <span class="pick-rate">
+                                            3.27
+                                            %
+                                            <small>
+                                                151
+                                                게임
+                                            </small>
+                                        </span>
+                                        <span class="win-rate">
+                                            <em>
+                                                52.32
+                                                %
+                                            </em>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-build">
+                    <h3 class="skill-build-name">
+                        <a href="">
+                            추천 스킨 빌드
+                            <span class="arrow-icon">
+                            </span>
+                        </a>
+                    </h3>
+                    <div class="skill-build-main">
+                        <div class="skill-build-main2">
+                            <div class="skill-build-main3">
+                                <div class="skill-build-main4">
+                                    <div class="skill-build-icon">
+                                        <div class="skill-build-icon2">
+                                            <div style="position: relative;">
+                                                <span class="skill_mol">
+                                                    <img src="imgs/skill/Q.jpeg" width="32" height="32" alt="천부적 재능" class="skill-1">
+                                                    <strong class="skill-q3">Q</strong>
+                                                </span>
+                                            </div>
+                                            <img src="imgs/free-icon-arrow-right-6423875.png" width="24" height="24" alt=">">
+                                            <div style="position: relative;">
+                                                <span class="skill_mol">
+                                                    <img src="imgs/skill/E.jpeg" width="32" height="32" alt="거침없는 질주" class="skill-1">
+                                                    <strong class="skill-e3">E</strong>
+                                                </span>
+                                            </div>
+                                            <img src="imgs/free-icon-arrow-right-6423875.png" width="24" height="24" alt=">">
+                                            <div style="position: relative;">
+                                                <span class="skill_mol">
+                                                    <img src="imgs/skill/W.jpeg" width="32" height="32" alt="원형 검무" class="skill-1">
+                                                    <strong class="skill-w3">W</strong>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-order">
+                                        <span class="skill-order1">
+                                            <strong class="skill-order-q">Q</strong>
+                                        </span>
+                                        <span class="skill-order1">
+                                            <strong class="skill-order-e">E</strong>
+                                        </span>
+                                        <span class="skill-order1">
+                                            <strong class="skill-order-w">W</strong>
+                                        </span>
+                                        <span class="skill-order1">
+                                            <strong class="skill-order-q">Q</strong>
+                                        </span>
+                                        <span class="skill-order1">
+                                            <strong class="skill-order-q">Q</strong>
+                                        </span>
+                                        <span class="skill-order1">
+                                            <strong class="skill-order-r">R</strong>
+                                        </span>
+                                        <span class="skill-order1">
+                                            <strong class="skill-order-q">Q</strong>
+                                        </span>
+                                        <span class="skill-order1">
+                                            <strong class="skill-order-e">E</strong>
+                                        </span>
+                                        <span class="skill-order1">
+                                            <strong class="skill-order-q">Q</strong>
+                                        </span>
+                                        <span class="skill-order1">
+                                            <strong class="skill-order-e">E</strong>
+                                        </span>
+                                        <span class="skill-order1">
+                                            <strong class="skill-order-r">R</strong>
+                                        </span>
+                                        <span class="skill-order1">
+                                            <strong class="skill-order-e">E</strong>
+                                        </span>
+                                        <span class="skill-order1">
+                                            <strong class="skill-order-e">E</strong>
+                                        </span>
+                                        <span class="skill-order1">
+                                            <strong class="skill-order-w">W</strong>
+                                        </span>
+                                        <span class="skill-order1">
+                                            <strong class="skill-order-w">W</strong>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-build-rate">
+                                <div class="skill-build-pick_rate">
+                                    <strong>
+                                        87.2
+                                        %
+                                    </strong>
+                                    <br>
+                                    <small>
+                                        5,728
+                                        게임
+                                    </small>
+                                </div>
+                                <div class="skill-build-win_rate">
+                                    69.66
+                                    %
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <aside>
+                <div class="side1">
+                </div>
+                <div class="side2">
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- sub -->
+    <section id="sub"></section>
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+    <script>
+        const ctx = document.getElementById('myChart');
+        new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+            y: {
+                beginAtZero: true
+            }
+            }
+        }
+        });
+    </script>
+</body>
+</html>

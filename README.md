@@ -1,1 +1,2 @@
-# CYGG
+# cygg-sejun
+ cyggsejun
